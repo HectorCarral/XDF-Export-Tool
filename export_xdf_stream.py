@@ -62,7 +62,7 @@ def exportStream(file_path, stream_name, markers_stream_name=None, markers_to_wr
     output_file_name = stream_name
     if subject_number is not None and subject_number is not '':
         output_file_name = output_file_name + '-' + str(subject_number)
-    desired_stream_dataframe.to_csv(output_file_path + '/Test/' + output_file_name + '.csv', sep='\t', index=False)
+    desired_stream_dataframe.to_csv(output_file_path + '/' + output_file_name + '.csv', sep='\t', index=False)
 
     print("File " + output_file_name + ".csv created successfully")
     return "File " + output_file_name + ".csv created successfully"
