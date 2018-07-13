@@ -1,7 +1,7 @@
 # XDF-Export-Tool
-Python tool to export individual streams from an XDF file into CSV.
+Python tool to export individual streams from an [XDF](https://github.com/sccn/xdf) file into CSV.
 
-This application is based on PyQT5 and runs on Python 3.7.
+This application is based on PyQt5 and runs on Python 3.7.
 
 ## Instructions
 
