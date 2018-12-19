@@ -6,7 +6,10 @@ import re
 def exportStream(file_path, stream_name, markers_stream_name=None, markers_to_write=None):
     streams = xdf.load_xdf(file_path, verbose=False)
     
-    subject_number = re.findall('\\d+', file_path[file_path.rfind('/'):])[0]
+    subject_number = None
+    digits = re.findall('\\d+', file_path[file_path.rfind('/'):])
+    if len(digits) > 0:
+        subject_number = digits[0]
     
     # Find the desired stream
     desired_stream = None
